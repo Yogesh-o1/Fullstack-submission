@@ -21,7 +21,7 @@ sequenceDiagram
   note left of browser: starts executing js code and requests json data from server
   browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
   activate server
-  server-->browser:[...{content: " ",date:" "},..
+  server-->browser:[...{content: " ",date:" "},..]
   deactivate server
   note left of browser: browser renders notes to display
   
