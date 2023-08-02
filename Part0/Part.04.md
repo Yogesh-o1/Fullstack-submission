@@ -4,7 +4,7 @@ sequenceDiagram
   participant browser
   participant server
 
-  browser->>server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+  browser->>server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/new note
   activate server
   server-->>browser: Gives html doc
   deactivate server
