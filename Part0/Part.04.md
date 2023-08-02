@@ -9,4 +9,6 @@ sequenceDiagram
   server-->browser: Gives html doc
   note left of server: request success status code:200
   deactivate server
-  browser-->server:
+  browser-->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+  activate server
+  server--> browser:Gives the css file
