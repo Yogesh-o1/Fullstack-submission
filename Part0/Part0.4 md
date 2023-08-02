@@ -1,0 +1,11 @@
+#Part 0.4
+```mermaid
+sequenceDiagram
+  participant browser
+  participant server
+
+  browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+  activate server
+  server-->browser: Gives html doc
+  deactivate server
+  browser
